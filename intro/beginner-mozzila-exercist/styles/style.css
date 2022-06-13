@@ -1,0 +1,40 @@
+*, *::before, *::after{
+    box-sizing:border-box;
+}
+
+body{
+    display:grid;
+    min-height:100vh;
+    place-content: center;
+    margin:0;
+    padding:0 100px;
+    background-color: #00539F;
+}
+
+body > div{
+   border: 5px solid black;
+   background-color: #FF9500;
+}
+
+header{
+    padding:0 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+h1{
+    font-size:60px;
+    text-align:center;
+    color:#00539F;
+    text-shadow: 3px 3px 1px black;  
+}
+
+img{
+   width:40%;
+   height:40%;
+}
+
+main{
+    padding: 0 40px;
+}
