@@ -19,4 +19,13 @@ function getName() {
   else return getName();
 }
 
+const image = document.querySelector("img");
+
+document.querySelector("button").addEventListener("click", () => {
+  const attr = image.getAttribute("src");
+  if (attr === "images/Mozilla_Firefox_2004_Logo.png")
+    image.setAttribute("src", "images/animated-stick-figure-image-0041.gif");
+  else image.setAttribute("src", "images/Mozilla_Firefox_2004_Logo.png");
+});
+
 changeName();
